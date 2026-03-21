@@ -1,16 +1,25 @@
-# React + Vite
+# Green Shop 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Green Shop is a modern E-commerce web application built with **React**. It allows users to browse products, view details, and manage their shopping cart.
 
-Currently, two official plugins are available:
+## 🚀 Features
+* **Product Listing:** Browse through a variety of eco-friendly products.
+* **Shopping Cart:** Add, remove, and update product quantities using React Context API.
+* **Responsive Design:** Fully optimized for mobile, tablet, and desktop views.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+* **Frontend:** React.js
+* **Styling:** CSS3 / Tailwind CSS
+* **State Management:** Context API
 
-## React Compiler
+## ⚖️ License & Usage
+This project is licensed under the **GNU GPLv3 License**. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Important Note for Visitors:**
+This project is part of my **professional portfolio**. While the source code is visible for educational purposes:
+* You **cannot** claim this work as your own.
+* Unauthorized commercial use of this specific design and brand is prohibited.
+* If you use or modify this code, you **must** credit the original author and keep your derivative work Open Source under the same license.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+Developed with ❤️ by [Biruk](https://github.com/biruk370)
