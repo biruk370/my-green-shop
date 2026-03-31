@@ -7,14 +7,14 @@ function Cart(){
             cart.length==0 ? (
             <div style={{padding:'50px',textAlign: 'center'}}>
                 <h2>Carton Empty!🛒</h2>
-                <Link to="/">Back To Shoping</Link>
+                <Link to="/" style={{textDecoration:'none',color:'white'}}>Back To Shoping</Link>
             </div>
         ):(
         <div style={{ padding: '20px' }}>
             <h1>Selected Items</h1>
             {
-                cart.map((item,index)=>(
-                    <div key={index} style={{ 
+                cart.map((item)=>(
+                    <div key={item.order_id} style={{ 
             display: 'flex', justifyContent: 'space-between', alignItems: 'center',
             borderBottom: '1px solid #ddd', padding: '10px 0' 
           }}>
@@ -25,7 +25,7 @@ function Cart(){
                             <h4>{item.name}</h4>
                             <h4>{item.price}</h4>
                         </div>
-                        <button onClick={() => removeFromeCart(item.id)} style={{ background: '#e74c3c', color: 'white', border: 'none', padding: '5px 10px', borderRadius: '3px', cursor: 'pointer' }}>Remove</button>
+                        <button onClick={() => removeFromeCart(item.order_id)} style={{ background: '#e74c3c', color: 'white', border: 'none', padding: '5px 10px', borderRadius: '3px', cursor: 'pointer' }}>Remove</button>
                     </div>
                 ))
             }

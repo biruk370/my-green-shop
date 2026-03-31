@@ -9,10 +9,15 @@ export function CartProvider({ children }) {
         localStorage.setItem("my_cart",JSON.stringify(cart));
     },[cart]);
     const addToCart = (product) => {
-        setcart([...cart, product]);
+        const newproduct = {...product,order_id:Date.now()}
+        setcart([...cart, newproduct]);
     };
     const removeFromeCart=(productid)=>{
-        const Updatedcart=cart.filter((product)=>product.id!=productid);
+        console.log(productid);
+        console.log(cart);
+        const Updatedcart=cart.filter((product)=>product.order_id!=productid);
+        console.log(Updatedcart);
+
         setcart(Updatedcart);
     }
     return (
@@ -20,4 +25,4 @@ export function CartProvider({ children }) {
             {children}
         </CartContext.Provider>
     )
-} export const useCart = () => useContext(CartContext)
+} export const useCart = () => useContext(CartContext);

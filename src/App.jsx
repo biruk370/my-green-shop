@@ -7,12 +7,18 @@ import { CartProvider } from './context/CartContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import {AuthProvider} from './context/AuthContext';
+import AddProduct from './pages/AddProduct';
+import Register from './pages/Register';
+import ChangePassword from './pages/ChangePassword';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 function App(){
   return(
+    <Router>
     <AuthProvider>
     <CartProvider>
-    <Router>
       <Navbar />
+      <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} ></Route>
         <Route path="/cart" element={
@@ -21,12 +27,16 @@ function App(){
           </ProtectedRoute>
           }>
           </Route>
+          <Route path="/addproduct" element={<AddProduct />} ></Route>
         <Route path="/product/:id" element={<ProductDetail />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        </Routes> 
-    </Router>
+        <Route path="/register" element={<Register />} ></Route>
+        <Route path="/changepassword" element={<ChangePassword/>}></Route>
+        </Routes>
+        <Footer /> 
     </CartProvider>
     </AuthProvider>
+    </Router>
   )
 }
 export default App;
