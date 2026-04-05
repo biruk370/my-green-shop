@@ -20,7 +20,7 @@ function Login(){
         }
     }
     return (
-    <div style={{ padding: '50px', textAlign: 'center' }}>
+    <div style={{ padding: '50px', textAlign: 'center',background:'#B0FFFA'  }}>
         <h2>Please Login To Continue</h2>
         <form onSubmit={handleSubmit}>
         <div style={styles.container}>
