@@ -46,7 +46,7 @@ function Register() {
     }
 
     return (
-        <div style={{ padding: '50px', textAlign: 'center' }}>
+        <div style={{ padding: '50px', textAlign: 'center',background:'#B0FFFA' }}>
             <form onSubmit={handleChange}>
                 <div style={styles.container}>
                     <h2 style={{ fontWeight: 'bold', color: '#ccc', fontSize: '1.5rem' }}>Register</h2>

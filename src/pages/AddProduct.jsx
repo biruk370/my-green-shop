@@ -31,7 +31,7 @@ const AddProduct=()=>{
         description:''});
     }
         return(
-            <div>
+            <div style={{background:'#B0FFFA' }}>
                 <div>
                     <h2>Provide New Product For Sale</h2>
                     <form onSubmit={handleSubmit}>

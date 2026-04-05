@@ -5,12 +5,12 @@ function Cart(){
     const totalPrice=cart.reduce((total,item)=>total+item.price,0);
         return(
             cart.length==0 ? (
-            <div style={{padding:'50px',textAlign: 'center'}}>
+            <div style={{padding:'50px',textAlign: 'center' }}>
                 <h2>Carton Empty!🛒</h2>
                 <Link to="/" style={{textDecoration:'none',color:'white'}}>Back To Shoping</Link>
             </div>
         ):(
-        <div style={{ padding: '20px' }}>
+        <div style={{ padding: '20px',background:'#B0FFFA'  }}>
             <h1>Selected Items</h1>
             {
                 cart.map((item)=>(
