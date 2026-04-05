@@ -59,7 +59,7 @@ function Register() {
     display: 'flex',
     alignItems: 'center',
     height: '45px',
-    backgroundColor: '#333', 
+    backgroundColor: '#ddd', 
     borderRadius: '4px',
     padding: '0 10px',
     marginBottom: '15px',width:'94%'
@@ -73,7 +73,7 @@ function Register() {
       marginLeft: '10px'
     }
   }}/>
-  Is possible: {formdata.phone && isPossiblePhoneNumber(formdata.phone) ? 'true' : 'false'}
+  Is possible: {formdata.phone && isPossiblePhoneNumber(formdata.phone) ? 'yes' : 'digit less than required '}
 Is valid: {formdata.phone && isValidPhoneNumber(formdata.phone) ? 'true' : 'false'}
 National: {formdata.phone && formatPhoneNumber(formdata.phone)}
 International: {formdata.phone && formatPhoneNumberIntl(formdata.phone)}
